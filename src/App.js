@@ -9,7 +9,6 @@ import Baogia from './pages/Baogia.js';
 import Lienhe from './pages/Lienhe.js';
 import { useEffect } from 'react';
 import { useState } from 'react';
-import Modal from './pages/Modal.js';
 
 
 
@@ -28,7 +27,6 @@ function App() {
     window.addEventListener('scroll', handleScroll)
 
   }, [])
-  const [openModal, setOpenModal] = useState(false)
 
 
 
@@ -45,9 +43,6 @@ function App() {
           <Route path='/lienhe' element={<Lienhe />} />
           {/* <Route path='/tailieu' element={<Modal/>} /> */}
         </Routes>
-
-        <Modal />
-
         <Footer />
       </Router>
       {showGoToTop &&

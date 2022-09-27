@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 class About extends React.Component {
     render() {
         return (
@@ -66,23 +66,23 @@ class About extends React.Component {
                             <table>
                                 <tbody>
                                     <tr>
-                                        <td>✅ Giao diện đẹp	</td>
-                                        <td>⭐ Giao diện đẹp, thiết kế chuyên nghiệp, khoa học, đảm bảo chất lượng
+                                        <td><span role='img' aria-label="tick">✅ Giao diện đẹp</span></td>
+                                        <td><span role='img' aria-label="star">⭐ Giao diện đẹp, thiết kế chuyên nghiệp, khoa học, đảm bảo chất lượng</span>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>✅ Tên miền	</td>
-                                        <td>⭐Tên miền quốc gia Việt Nam, tên miền Quốc tế đăng ký thông tin chủ thể đầy đủ
+                                        <td><span role='img' aria-label="tick">✅ Tên miền</span>	</td>
+                                        <td><span role='img' aria-label="star">⭐Tên miền quốc gia Việt Nam, tên miền Quốc tế đăng ký thông tin chủ thể đầy đủ</span>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>✅ Seo từ khóa top google	</td>
-                                        <td>⭐Thu hút hàng ngàn lượt khách hàng tiềm năng từ công cụ tìm kiếm Google
+                                        <td><span role='img' aria-label="tick">✅ Seo từ khóa top google	</span></td>
+                                        <td><span role='img' aria-label="star">⭐Thu hút hàng ngàn lượt khách hàng tiềm năng từ công cụ tìm kiếm Google</span>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>✅ Hosting/VPS khủng giá rẻ	</td>
-                                        <td>⭐Cung cấp các gói hosting, VPS khủng giá rẻ hấp dẫn, tối ưu chi phí cho doanh nghiệp của bạn
+                                        <td><span role='img' aria-label="tick">✅ Hosting/VPS khủng giá rẻ </span></td>
+                                        <td><span role='img' aria-label="star">⭐Cung cấp các gói hosting, VPS khủng giá rẻ hấp dẫn, tối ưu chi phí cho doanh nghiệp của bạn</span>
                                         </td>
                                     </tr>
                                 </tbody>

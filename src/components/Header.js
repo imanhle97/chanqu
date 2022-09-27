@@ -1,8 +1,7 @@
-import React, { Component, useState } from "react";
+import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 const Header = () => {
-
-    const [show, setShow] = useState(0)
+    const [show, setShow] = useState(true)
     return (
         <header className="header" id="header">
             <div className="nav">
@@ -33,7 +32,7 @@ const Header = () => {
                             </div>
                         </div>
                         <div className="info">
-                            <a href="">
+                            <a href="/">
                                 <i className="fa-solid fa-globe icons"></i>
                                 <i className="fa-brands fa-facebook icons"></i>
                                 <i className="fa-brands fa-twitter icons"></i>
@@ -51,12 +50,9 @@ const Header = () => {
                         <img src="./assets/hinhanh/logo.png" alt="" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })} />
                     </Link>
                 </div>
-                <div className="bar_menu" id="bar-menu">
-                    <i className="fa-solid fa-bars"></i>
-                </div>
-                <ul className="ul_list-item" id="mobile-menu">
+                <ul className={show ? 'ul_list-item' : ''} id="mobile-menu">
                     <li className="li_list-item">
-                        <a className="list_item-link"
+                        <a href="/" className="list_item-link"
                             onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}
                         >Home</a>
                     </li>
@@ -68,8 +64,8 @@ const Header = () => {
                     </li>
 
                     <li className="li_list-item">
-                        <a className="list_item-link">Dịch vụ</a>
-                        <ul>
+                        <a   className="list_item-link">Dịch vụ</a>
+                        <ul >
                             <li>
                                 <a href="http://127.0.0.1:5500/dv_page/index.html" className="menu_link">
                                     Dịch Vụ Thiết kế Web Chuyên nghiệp
@@ -93,8 +89,9 @@ const Header = () => {
                         </ul>
                     </li>
                     <li className="li_list-item">
-                        <a className="list_item-link"
-                        />Tài liệu
+                        <a href="/" 
+                        onClick={() => setShow(!show)}
+                        className="list_item-link">Tài liệu</a>
                     </li>
 
                     {/* <Link className="li_list-item" to="/tailieu">Tài liệu</Link> */}
@@ -103,6 +100,11 @@ const Header = () => {
                         <Link className="li_list-item" to="/lienhe">Liên Hệ</Link>
                     </li>
                 </ul>
+                <div className="bar_menu" id="bar-menu">
+                    <i
+                        onClick={() => setShow(!show)}
+                        className="fa-solid fa-bars"></i>
+                </div>
                 <Link className="li_list-item baogia" id="baogia" to="/baogia" >Báo giá</Link>
                 {/* <div className="li_list-item" id="baogia"> */}
                 {/* <a className="btn_baogia">Báo giá</a> */}

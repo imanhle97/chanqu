@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { Link } from 'react-router-dom';
 
 const Home = () => {
@@ -6,7 +6,6 @@ const Home = () => {
         <div>
 
             <div className="wrapper">
-
 
                 <section className="app">
                     <div className="container_mid">
@@ -28,7 +27,7 @@ const Home = () => {
                             </h3>
                         </div>
                         <div className="nhanbaogia" id="myBtn">
-                            <Link className="li_list-item btn_nhanbaogia" to="/baogia" >NHẬN BÁO GIÁ</Link>
+                            <Link className="li_list-item btn_nhanbaogia border_rad" to="/baogia" >NHẬN BÁO GIÁ</Link>
                             {/* <a className="btn_nhanbaogia">NHẬN BÁO GIÁ</a> */}
                         </div>
                     </div>
@@ -49,7 +48,7 @@ const Home = () => {
                                 tính ứng dụng cao và phù hợp với mục đích kinh doanh của từng doanh nghiệp.
                             </div>
                             <div className="xemthem">
-                                <a href="" className="btn_xemthem">Xem Thêm</a>
+                                <a href="/" className="btn_xemthem">Xem Thêm</a>
                             </div>
                         </div>
                         <div className="image">
@@ -199,15 +198,15 @@ const Home = () => {
                             </h2>
                             <div className="title_cauhoi">
                                 <ul>
-                                    <li> <a href="">Dịch vụ thiết kế website là gì? </a></li>
-                                    <li> <a href="">Giá thiết kế web như thế nào? </a></li>
-                                    <li> <a href="">Thời gian thiết kế web hết bao nhiêu thời gian? </a></li>
-                                    <li> <a href="">Có những loại website nào? </a></li>
-                                    <li> <a href="">Dịch vụ thiết kế Website ở đâu uy tín, chuyên nghiệp? </a></li>
-                                    <li> <a href="">Tên miền và hosting? </a></li>
-                                    <li> <a href="">Cam kết bảo mật thông tin không? </a></li>
+                                    <li> <a href="/">Dịch vụ thiết kế website là gì? </a></li>
+                                    <li> <a href="/">Giá thiết kế web như thế nào? </a></li>
+                                    <li> <a href="/">Thời gian thiết kế web hết bao nhiêu thời gian? </a></li>
+                                    <li> <a href="/">Có những loại website nào? </a></li>
+                                    <li> <a href="/">Dịch vụ thiết kế Website ở đâu uy tín, chuyên nghiệp? </a></li>
+                                    <li> <a href="/">Tên miền và hosting? </a></li>
+                                    <li> <a href="/">Cam kết bảo mật thông tin không? </a></li>
                                     <li className="li-style-border">
-                                        <a href="">
+                                        <a href="/">
                                             Tôi đã có website, nên dùng dịch vụ sửa web hay thiết kế web mới?
                                         </a>
                                     </li>
