@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 
 const Footer = () => {
         return (
@@ -20,12 +20,12 @@ const Footer = () => {
                                     <li>- <b>Email</b>: seannguyenit@gmail.com
                                     </li>
                                     <li>
-                                        <a href="">
+                                        <a href="/">
                                             <img src="https://igitech.vn/resources/images/bocongthuong.png" alt="" />
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="">
+                                        <a href="/">
                                             <img src="https://images.dmca.com/Badges/dmca_protected_sml_120m.png?ID=cb31a22c-2f07-4a19-b9a1-18787e3fe074"
                                                 alt="" />
                                         </a>

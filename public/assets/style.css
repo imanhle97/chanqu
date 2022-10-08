@@ -120,7 +120,9 @@
     font-weight: bold;
     cursor: pointer;
 }
-
+.li_list-item:hover {
+    background-color: #00c1d4;
+}
 .li_list-item ul {
     padding: 0;
     list-style: none;
@@ -158,9 +160,7 @@
     line-height: 3rem;
 }
 
-.menu_link:hover {
-    color: #f55e00;
-}
+
 
 .list_item-link {
     line-height: 50px;
@@ -171,9 +171,6 @@
     text-align: center;
 }
 
-.list_item-link:hover {
-    color: #f55e00;
-}
 
 .container {
     align-items: center;
@@ -241,7 +238,7 @@
     font-size: 1.6rem;
     text-decoration: none;
     color: #fff;
-    background-color: #333;
+    background-color: #00b3c8;
     border-radius: 3rem;
     height: 5rem;
     width: 18rem;
@@ -634,12 +631,27 @@ h2 {
         color: #333;
         display: block;
         background-color: #00b3c8;
-        border-radius: 20px;
-        
+        border-radius: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
     }
-
+ 
+   
     .li_list-item a {
         line-height: 5rem;
+        padding:  0;
+    }
+    .dichvu_a {
+        position: relative;
+        width: 50px;
+    }
+    .dichvu_a i {
+        line-height: 50px;
+        left: 0;
+    }
+    .border_rad {
+        border-radius: 20px;
     }
 
     .list {
@@ -671,7 +683,6 @@ h2 {
     }
 
     .header {
-        overflow: hidden;
         height: 8rem;
     }
 
@@ -679,14 +690,42 @@ h2 {
         margin-top: 8rem;
     }
 
+    .title_baogia h3,
+    .title_con,
+    .title_dichvu {
+        line-height: 30px;
+    }
+
+    .title p {
+        line-height: 30px;
+    }
+
     .list_dichvu {
         display: block;
+    }
+
+    .slider_dichvu {
+        display: none;
+    }
+    .dichvu_mobile {
+        position: absolute;
+        right: 0;
+        line-height: 50px;
+        font-size: 20px;
+
+    }
+    .btn_nhanbaogia {
+        text-align: center;
     }
 
     .img_cauhoi img {
         width: 100%;
     }
 
+    .li_list-item  ul{
+        display: none;        
+    }
+   
     .gioithieu {
         display: block;
     }
@@ -725,7 +764,16 @@ h2 {
     .cot {
         width: auto;
     }
-
+    .bar_menu_display {
+        transition: height 200ms ease ;
+        background-color: #00c1d4;
+        font-size: 15px;
+        list-style: none;
+    }
+    
+    .bar_menu_display li:hover {
+        background-color: #9ca3af;
+    }
     .footer {
         padding: 0;
         background-repeat: no-repeat;
@@ -740,8 +788,11 @@ h2 {
         background-color: #00b3c8;
         height: 50px;
         line-height: 45px;
+        display: none;
     }
-
+    .menu_link {
+        font-weight: 500;
+    }
     .ul_list-item {
         display: none;
         float: left;
@@ -749,13 +800,29 @@ h2 {
         width: 100%;
         left: 0;
     }
+    .container_cauhoi {
+        display: block;
+    }
+    #mobile-menu {
+        position: absolute;
+        top: 80px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        left: 0;
 
+    }
+    .li_list-item {
+        transition: height 200ms ease;
+        text-align: left;
+    }
     .logo {
-        display: none;
         height: 100%;
         float: left;
     }
-
+    .animation {
+        transition: height 0 0.36s ease 0s;
+    }
     .container {
         height: 8rem;
 

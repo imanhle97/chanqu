@@ -9,7 +9,6 @@ import Baogia from './pages/Baogia.js';
 import Lienhe from './pages/Lienhe.js';
 import { useEffect } from 'react';
 import { useState } from 'react';
-import Modal from './pages/Modal.js';
 
 
 
@@ -28,7 +27,6 @@ function App() {
     window.addEventListener('scroll', handleScroll)
 
   }, [])
-  const [openModal, setOpenModal] = useState(false)
 
 
 
@@ -45,9 +43,6 @@ function App() {
           <Route path='/lienhe' element={<Lienhe />} />
           {/* <Route path='/tailieu' element={<Modal/>} /> */}
         </Routes>
-
-        <Modal />
-
         <Footer />
       </Router>
       {showGoToTop &&
@@ -56,13 +51,15 @@ function App() {
             position: 'fixed',
             right: 30,
             bottom: 10,
-            background: '#a1b0fc',
-            borderRadius: 100,
+            width:50,
+            background: '#3a3a3d',
+            borderRadius: 10,
             height: 50, fontSize: 15,
-            cursor: 'pointer', borderColor: '#f55e00'
+            cursor: 'pointer', borderColor: 'rgb(0 193 212)',
+            color:'#fff'
           }}
           onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}
-        >{<i class="fa-solid fa-ghost"></i>} TOP</button>
+        >{<i class="fa-solid fa-chevron-up"></i>}</button>
       }
     </div >
   )

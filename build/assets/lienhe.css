@@ -1,0 +1,368 @@
+
+.grid {
+    width: 1170px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.gioithieu {
+    margin: 0 auto;
+    font-size: 115%;
+    text-align: center;
+}
+.title,.title_con {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.title p {
+    color: #0073ce;
+    margin: 50px 0;
+}
+
+.title_con p {
+    font-size: 18px;
+    margin: 0 0 50px 0 ;
+}
+.img {
+    width: 60%;
+}
+.trinhbay {
+    display: flex;
+}
+.content_img {
+    width: 42%;
+}
+
+.img {
+    width: 58%;
+}
+.img img {
+    width: 100%;
+}
+.content_img ,.img {
+    padding: 0 15px;
+}
+.content_img h2 {
+    font-size: 20px;
+    line-height: 30px;
+    color: #0073ce;
+}
+.content_img p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-align: justify;
+}
+.content_img h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+
+}
+.write {
+    padding: 0 15px 30px;
+}
+.write p {
+    font-weight: normal;
+    text-align: justify;
+    font-size: 17px;
+}
+.title_dichvu  h3{
+    text-align: center;
+    font-size: 25px;
+    color: #0073ce;
+}
+table td {
+    border: 1px solid #333;
+    font-weight: normal;
+    line-height: 40px;
+    padding: 10px;
+}
+
+table {
+    margin: 0 auto;
+}
+.table_dichvu {
+    margin-bottom: 50px;
+}
+.footer_dichvu {
+    display: flex;
+    align-items: center;
+    padding-bottom: 50px;
+}
+.giaodiendep h3{
+    font-size: 20px;
+    right: 0;
+    text-align: end;
+    color: #ffcc00;
+}
+.giaodiendep h4 {
+    font-size: 15px;
+    font-weight: normal;
+    text-align: end;
+
+}
+.quangcao {
+    width: 33.333%;
+    text-align: center;
+}
+.quangcao img{
+    height: 398px;
+}
+.slider_dichvu img{
+    width: 100%;
+
+}
+.slider_dichvu {
+    margin-bottom: 50px;
+}
+.title_lienhe h3{
+    font-size: 35px;
+    text-align: center;
+    color: #fff;
+    padding-top: 50px;
+}
+.title_lienhe {
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 100px;
+}
+.title_lienhe h4 {
+    line-height: 25px;
+    font-weight: normal;
+    font-size: 17px;
+    color: #fff;
+
+}
+.lienhe {
+    margin-top: 120px;
+    background-image: url(https://websiteviet.vn/wp-content/uploads/2021/12/thiet-ke-web-01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.input_1 {
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+.input_3 {
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+.input_3 input {
+    border-radius: 5px;
+    height: 50px;
+    border: 0;
+    width: 33%;
+    padding: 10px;
+}
+.input_1 input {
+    border-radius: 5px;
+    height: 100px;
+    border: 0;
+    width: 100%;
+    padding: 10px;
+}
+.btn_send {
+    text-align: center;
+}
+.btn_send button {
+    font-size: 20px;
+    width: 180px;
+    height: 40px;
+    border: 0;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #424d83;
+}
+.inner
+ {
+    text-align: center;
+}
+.inner h1 {
+    margin: 30px 0;
+    color: #f6871f;
+    font-weight: normal;
+}
+.img_partners {
+    margin: 0 auto;
+    margin-bottom:  50px;
+}
+.img_partners ul {
+    margin: 0 auto;
+    padding:  0;
+    display: flex;
+}
+.img_partners li {
+    width: 33.3333%;
+    height: 100%;
+    list-style: none;
+    margin: 0 auto;
+}
+.img_partners img{
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+}
+
+.container_baogia {
+    display: flex;
+    justify-content: center;
+}
+.container>nav {
+    width: 100%;
+}
+.box_baogia {
+    border-radius: 14px;
+    margin:20px;
+    width: 33.33%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.title_baogia {
+    text-align: center;
+}
+.title_baogia h3 {
+    color: rgb(39, 45, 165);
+}
+.title_baogia p {
+    font-weight: normal;
+    font-size: 16px;
+}
+.title_baogia h3::after {
+    content: '';
+    display: table;
+    background: url('https://websiteviet.vn/wp-content/uploads/2019/12/line.png');
+    width: 100%;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position-x:center;
+    background-position-y:center;
+    padding-top: 0;
+    margin: 10px 0;
+}
+.header_boxbaogia {
+    background-image:linear-gradient(to right top, #01ffa9, #00e3e1, #00c0ff, #0093ff, #0b50ff);
+    border-radius: 14px;
+    color: white;
+    text-align: center;
+    padding-bottom: 30px
+    
+}
+.header_boxbaogia h3 {
+    padding-top: 20px;
+}
+.chonlua {
+    background-color: #f6f9fb;
+    color: #333;
+    width: 250px;
+    margin: 0 auto;
+    font-weight: normal;
+    font-size: 14px;
+    border-radius: 20px;
+    padding: 8px;
+    margin-top: 20px;
+    
+}
+input {
+    margin-right: 3.33px;
+}
+.chonlua span {
+    line-height: 14px;
+}
+.body_boxbaogia {
+    text-align: center;
+}
+.body_boxbaogia h3{
+    margin: 30px 0;
+}
+.list_module td {
+    border: none;
+    padding: 5px;
+    line-height: 20px;
+    left: 0;
+    text-align: left;
+}
+.list_tinhnang li {
+    font-weight: normal;
+    text-align: left;
+    line-height: 35px;
+}
+.list_tinhnang h3{
+    margin: 30px 0;
+}
+.list_tinhnang>li>.fa-circle-check {
+    padding-right: 5px;
+    color: green;
+}
+.list_tinhnang>li>.fa-circle-xmark {
+    padding-right: 5px;
+    color: #ff6565;
+}
+.list_module i {
+    padding-right: 5px;
+    color: green;
+}
+.list_tinhnang {
+    list-style: none;
+    padding-left: 50px;
+    margin-bottom: 30px;
+}
+.goi_nangcao {
+    background-image:linear-gradient(to right top, #1ccafc, #51afff, #a488f5, #de52b9, #ee0763);
+
+}
+.goi_caocap {
+    background-image:linear-gradient(to right top, #f9e439, #ffbe00, #ff9600, #ff6800, #fc281c);
+    
+}
+
+@media only screen and (max-width: 740px) {
+.footer_dichvu {
+    display: block;
+}
+.quangcao {
+    width: 100%;
+}
+.quangcao img {
+    width: 100%;
+    object-fit: contain;
+}
+.container_baogia {
+    display: block;
+    padding: 0 15px;
+}
+.img {
+    width: 100%;
+}
+.content_img {
+    width: 100%;
+}
+.trinhbay {
+    display: block;
+}
+.box_baogia {
+    width: 100%;
+    margin: 0 auto;
+}
+.gioithieu {
+    padding: 0 15px;
+}
+.dichvu {
+    padding: 0 15px;
+}
+.title_lienhe {
+    text-align: center;
+}
+.input_3 input {
+    margin-top: 15px;
+}
+.inner {
+    padding: 0 15px;
+}
+.title_baogia {
+    padding: 0 15px;
+}
+
+.container>nav {
+    width: 100%;
+}
+}
