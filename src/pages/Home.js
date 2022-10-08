@@ -27,7 +27,7 @@ const Home = () => {
                             </h3>
                         </div>
                         <div className="nhanbaogia" id="myBtn">
-                            <Link className="li_list-item btn_nhanbaogia border_rad" to="/baogia" >NHẬN BÁO GIÁ</Link>
+                            <Link className="btn_nhanbaogia border_rad" to="/baogia" >NHẬN BÁO GIÁ</Link>
                             {/* <a className="btn_nhanbaogia">NHẬN BÁO GIÁ</a> */}
                         </div>
                     </div>

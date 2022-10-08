@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 const Header = () => {
     const [show, setShow] = useState(true)
+    const [ulTag, setUlTag] = useState(false)
     return (
         <header className="header" id="header">
             <div className="nav">
@@ -58,52 +59,64 @@ const Header = () => {
                     </li>
                     <li className="li_list-item">
                         {/* <a className="list_item-link">About</a> */}
-                        <Link className="li_list-item" to="/about">
+                        <Link
+                            onClick={() => setShow(!show)}
+                            className="list_item-link li_list-item" to="/about">
                             Giới thiệu
                         </Link>
                     </li>
 
-                    <li className="li_list-item">
-                        <a   className="list_item-link">Dịch vụ</a>
-                        <ul >
+                    <li
+                        onClick={() => setUlTag(!ulTag)}
+                        className="li_list-item">
+                        <span href="/" className="list_item-link">Dịch vụ</span>
+                        <a className="list_item-link dichvu_a">
+                            <i className={ulTag ? "fa-solid fa-chevron-up dichvu_mobile" : "fa-solid fa-chevron-down dichvu_mobile"}></i>
+                        </a>
+                    </li>
+                    {ulTag &&
+                        <ul className="bar_menu_display">
                             <li>
-                                <a href="http://127.0.0.1:5500/dv_page/index.html" className="menu_link">
+                                <a href="/" className="menu_link">
                                     Dịch Vụ Thiết kế Web Chuyên nghiệp
                                 </a>
                             </li>
-                            <li><a href="http://127.0.0.1:5500/dv_page/index.html" className="menu_link">
+                            <li><a href="/" className="menu_link">
                                 Xây dựng phần mềm
                             </a></li>
-                            <li><a href="http://127.0.0.1:5500/dv_page/index.html" className="menu_link">
+                            <li><a href="/" className="menu_link">
                                 Xây dựng app điện thoại
                             </a></li>
-                            <li><a href="http://127.0.0.1:5500/dv_page/index.html" className="menu_link">
+                            <li><a href="/" className="menu_link">
                                 Quản trị dữ liệu
                             </a></li>
-                            <li><a href="http://127.0.0.1:5500/dv_page/index.html" className="menu_link">
+                            <li><a href="/" className="menu_link">
                                 Tư vấn IT , chuyển đổi số
                             </a></li>
-                            <li><a href="http://127.0.0.1:5500/dv_page/index.html" className="menu_link">
+                            <li><a href="/" className="menu_link">
                                 Hệ thống IOT
                             </a></li>
                         </ul>
-                    </li>
+                    }
                     <li className="li_list-item">
-                        <a href="/" 
-                        onClick={() => setShow(!show)}
-                        className="list_item-link">Tài liệu</a>
+                        <a href="/"
+                            onClick={() => setShow(!show)}
+                            className="list_item-link">Tài liệu</a>
                     </li>
 
                     {/* <Link className="li_list-item" to="/tailieu">Tài liệu</Link> */}
                     <li className="li_list-item">
                         {/* <a className="list_item-link">Liên hệ</a> */}
-                        <Link className="li_list-item" to="/lienhe">Liên Hệ</Link>
+                        <Link
+                            onClick={() => setShow(!show)}
+                            className="list_item-link li_list-item"
+                            to="/lienhe">Liên Hệ</Link>
                     </li>
                 </ul>
                 <div className="bar_menu" id="bar-menu">
                     <i
                         onClick={() => setShow(!show)}
-                        className="fa-solid fa-bars"></i>
+                        className={show ? "fa-solid fa-bars" : "fa-solid fa-xmark"}></i>
                 </div>
                 <Link className="li_list-item baogia" id="baogia" to="/baogia" >Báo giá</Link>
                 {/* <div className="li_list-item" id="baogia"> */}

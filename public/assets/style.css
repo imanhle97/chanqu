@@ -120,7 +120,9 @@
     font-weight: bold;
     cursor: pointer;
 }
-
+.li_list-item:hover {
+    background-color: #00c1d4;
+}
 .li_list-item ul {
     padding: 0;
     list-style: none;
@@ -158,9 +160,7 @@
     line-height: 3rem;
 }
 
-.menu_link:hover {
-    color: #f55e00;
-}
+
 
 .list_item-link {
     line-height: 50px;
@@ -171,9 +171,6 @@
     text-align: center;
 }
 
-.list_item-link:hover {
-    color: #f55e00;
-}
 
 .container {
     align-items: center;
@@ -632,17 +629,27 @@ h2 {
 
     .li_list-item {
         color: #333;
-        display: inline-block;
+        display: block;
         background-color: #00b3c8;
         border-radius: 0;
-
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
     }
-
+ 
+   
     .li_list-item a {
         line-height: 5rem;
-
+        padding:  0;
     }
-
+    .dichvu_a {
+        position: relative;
+        width: 50px;
+    }
+    .dichvu_a i {
+        line-height: 50px;
+        left: 0;
+    }
     .border_rad {
         border-radius: 20px;
     }
@@ -700,8 +707,16 @@ h2 {
     .slider_dichvu {
         display: none;
     }
+    .dichvu_mobile {
+        position: absolute;
+        right: 0;
+        line-height: 50px;
+        font-size: 20px;
 
-    
+    }
+    .btn_nhanbaogia {
+        text-align: center;
+    }
 
     .img_cauhoi img {
         width: 100%;
@@ -710,9 +725,7 @@ h2 {
     .li_list-item  ul{
         display: none;        
     }
-    .li_list-item:hover ul {
-        display: block;
-    }
+   
     .gioithieu {
         display: block;
     }
@@ -751,7 +764,16 @@ h2 {
     .cot {
         width: auto;
     }
-
+    .bar_menu_display {
+        transition: height 200ms ease ;
+        background-color: #00c1d4;
+        font-size: 15px;
+        list-style: none;
+    }
+    
+    .bar_menu_display li:hover {
+        background-color: #9ca3af;
+    }
     .footer {
         padding: 0;
         background-repeat: no-repeat;
@@ -768,7 +790,9 @@ h2 {
         line-height: 45px;
         display: none;
     }
-
+    .menu_link {
+        font-weight: 500;
+    }
     .ul_list-item {
         display: none;
         float: left;
@@ -776,22 +800,29 @@ h2 {
         width: 100%;
         left: 0;
     }
-
+    .container_cauhoi {
+        display: block;
+    }
     #mobile-menu {
         position: absolute;
         top: 80px;
         width: 100%;
         margin: 0 auto;
         padding: 0;
-        left: 3.5px;
+        left: 0;
 
     }
-
+    .li_list-item {
+        transition: height 200ms ease;
+        text-align: left;
+    }
     .logo {
         height: 100%;
         float: left;
     }
-
+    .animation {
+        transition: height 0 0.36s ease 0s;
+    }
     .container {
         height: 8rem;
 
